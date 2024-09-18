@@ -1,0 +1,114 @@
+/* Estilos generales */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el menú de logo */
+
+.menu {
+    background-color: rgb(6, 105, 27);
+    padding: 10px; 
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu .logo {
+    color: white;
+    font-size: 25px;
+    line-height: 70px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.menu ul {
+    float: right;
+    margin-right: 10px;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 30px 15px;
+}
+
+.menu ul li a {
+    font-size: 16px;
+    padding: 8px 6px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li a:hover {
+    background-color: rgba(6, 75, 21, 0.849);
+}
+
+
+
+
+/* Estilo para el nav.Columnas */
+nav.Columnas {
+    background-color: gray; /* Degradado dorado */
+    color: white;
+    padding: 2px 0; /* Espaciado arriba y abajo */
+    display: flex; /* Usar flexbox */
+    justify-content: space-around; /* Distribuir los enlaces de manera uniforme */
+    align-items: center; /* Centrar verticalmente */
+    position: fixed; /* Fijar el nav en la parte superior */
+    top: 70px; /* Ajustar el top para que no tape el menú superior */
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Asegura que esté debajo del menú superior (Columnas) */
+}
+
+
+
+
+/* Estilo para los enlaces en nav.Columnas */
+nav.Columnas a.nav-link {
+    color: white; /* Letras negras para los enlaces */
+    text-decoration: none; /* Eliminar subrayado */
+    padding: 10px 15px; /* Espaciado alrededor del texto del enlace */
+}¿
+
+nav.Columnas a.nav-link.active {
+    font-weight: bold; /* Destacar el enlace activo */
+}
+
+nav.Columnas a.nav-link.disabled {
+    color: gray; /* Color de texto para enlaces deshabilitados */
+    pointer-events: none; /* Desactivar eventos de clic */
+    cursor: default; /* Cursor por defecto para enlaces deshabilitados */
+}
+
+/* Contenedor y estilos del logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px; /* Ajustar la altura del logo */
+    width: auto; /* Mantener la proporción del logo */
+    border-radius: 5px;
+}
+
+/* Estilo para el texto del logo */
+.logo-text {
+    color: white;
+    font-size: 25px;
+    line-height: 70px;
+    font-weight: 400;
+    margin-left: 20px;
+    flex-grow: 1; /* Permite que el texto ocupe el espacio restante */
+}
+
+
+
+
+
