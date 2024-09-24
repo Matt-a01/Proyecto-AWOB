@@ -1,89 +1,77 @@
 /* Estilos generales */
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo para el menú de logo */
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
 
+/* Estilo para el menú de navegación */
 .menu {
-    background-color: rgb(6, 105, 27);
-    padding: 10px; 
+    background-color: rgb(6, 105, 27); /* Color de fondo */
+    padding: px; /* Añadir espacio dentro del menú */
     display: flex;
-    align-items: center;
+    justify-content: space-between; /* Distribuir los elementos con espacio entre ellos */
+    align-items: center; /* Alinear los elementos verticalmente al centro */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 500;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
 }
 
 .menu .logo {
+    height: 80px; /* Ajustar tamaño del logo */
+}
+
+.menu .logo-container img {
+    max-height: 100%; 
+}
+
+.menu label {
     color: white;
-    font-size: 25px;
-    line-height: 70px;
-    font-weight: 400;
-    margin-left: 20px;
+    font-size: 20px; /* Ajustar tamaño de la fuente */
+    margin-left: 30px; /* Añadir un margen entre el logo y el texto */
 }
 
-.menu ul {
-    float: right;
-    margin-right: 10px;
-}
-
-.menu ul li {
-    display: inline-block;
-    margin: 30px 15px;
-}
-
-.menu ul li a {
-    font-size: 16px;
-    padding: 8px 6px;
-    text-decoration: none;
-    color: white;
-}
-
-.menu ul li a:hover {
-    background-color: rgba(6, 75, 21, 0.849);
-}
-
-
-
-
-/* Estilo para el nav.Columnas */
+/* Menú de navegación */
 nav.Columnas {
-    background-color: gray; /* Degradado dorado */
+    background-color: gray;
     color: white;
-    padding: 2px 0; /* Espaciado arriba y abajo */
-    display: flex; /* Usar flexbox */
-    justify-content: space-around; /* Distribuir los enlaces de manera uniforme */
-    align-items: center; /* Centrar verticalmente */
-    position: fixed; /* Fijar el nav en la parte superior */
-    top: 70px; /* Ajustar el top para que no tape el menú superior */
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 80px; /* Ajustar para que quede debajo del logo */
     left: 0;
     width: 100%;
-    z-index: 999; /* Asegura que esté debajo del menú superior (Columnas) */
+    z-index: 500;
 }
 
-
-
-
-/* Estilo para los enlaces en nav.Columnas */
 nav.Columnas a.nav-link {
-    color: white; /* Letras negras para los enlaces */
-    text-decoration: none; /* Eliminar subrayado */
-    padding: 10px 15px; /* Espaciado alrededor del texto del enlace */
-}¿
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
 
 nav.Columnas a.nav-link.active {
-    font-weight: bold; /* Destacar el enlace activo */
+    font-weight: bold;
 }
 
 nav.Columnas a.nav-link.disabled {
-    color: gray; /* Color de texto para enlaces deshabilitados */
-    pointer-events: none; /* Desactivar eventos de clic */
-    cursor: default; /* Cursor por defecto para enlaces deshabilitados */
+    color: gray;
+    pointer-events: none;
+    cursor: default;
 }
 
 /* Contenedor y estilos del logo */
@@ -93,7 +81,7 @@ nav.Columnas a.nav-link.disabled {
 }
 
 .logo {
-    height: 50px; /* Ajustar la altura del logo */
+    height: 0px; /* Ajustar la altura del logo */
     width: auto; /* Mantener la proporción del logo */
     border-radius: 5px;
 }
@@ -108,7 +96,57 @@ nav.Columnas a.nav-link.disabled {
     flex-grow: 1; /* Permite que el texto ocupe el espacio restante */
 }
 
+/* Estilo para el contenido principal */
+.Contenido {
+    margin-top: 150px; /* Evitar que el contenido se superponga con el menú */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
+.carrera {
+    display: flex;
+    flex-direction: row; /* Alinea la imagen, el nombre y la descripción horizontalmente */
+    align-items: center;
+    width: 100%; /* Ajusta el tamaño de cada carrera al ancho de la página */
+    max-width: 1200px; /* Puedes ajustar este valor para limitar el tamaño máximo de cada fila */
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd; /* Opcional: Añadir un borde para separar las carreras */
+}
 
+.imagenes img {
+    max-width: 350px; /* Ajusta el tamaño máximo de las imágenes */
+    margin-right: 40px; /* Espacio entre la imagen y el texto */
+}
 
+.NomCar {
+    font-size: 1.5rem;
+    margin-right: 20px; /* Espacio entre el nombre de la carrera y la descripción */
+}
 
+.CarDes p {
+    font-size: 1rem;
+}
+
+/* Asegura que el contenido se ajuste en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .carrera {
+        flex-direction: column; /* Cambia la orientación a vertical en pantallas pequeñas */
+        text-align: center;
+    }
+
+    .imagenes img {
+        margin-bottom: 10px;
+    }
+}
+
+/* Animación para desplazar las carreras al hacer scroll */
+.carrera {
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrera:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta de la carrera cuando se desplaza sobre ella */
+}
