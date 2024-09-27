@@ -97,35 +97,57 @@ nav.Columnas a.nav-link.disabled {
     flex-grow: 1; /* Permite que el texto ocupe el espacio restante */
 }
 
-
-
-/* Contenedor general */
-.Contenedor {
+/* Estilo para el contenido principal */
+.Contenido {
+    margin-top: 150px; /* Evitar que el contenido se superponga con el menú */
+    padding: 20px;
     display: flex;
-    justify-content: center;
-    padding: 200px 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-/* Estilos para la clase Col */
-.Col {
+.carrera {
     display: flex;
-    justify-content: space-between; /* Distribuye el texto y la imagen */
+    flex-direction: row; /* Alinea la imagen, el nombre y la descripción horizontalmente */
     align-items: center;
-    width: 80%;
-    background-color: rgba(24, 102, 9, 0.336);
+    width: 100%; /* Ajusta el tamaño de cada carrera al ancho de la página */
+    max-width: 1200px; /* Puedes ajustar este valor para limitar el tamaño máximo de cada fila */
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd; /* Opcional: Añadir un borde para separar las carreras */
 }
 
-/* Estilo para el texto */
-.texto {
-    width: 45%; /* El texto ocupa el 45% del ancho */
-    font-size: 18px;
-    color: black;
+.imagenes img {
+    max-width: 350px; /* Ajusta el tamaño máximo de las imágenes */
+    margin-right: 40px; /* Espacio entre la imagen y el texto */
 }
 
-/* Estilo para la imagen */
-.imagen img {
-    width: 95%; /* La imagen ocupa el 95% del ancho */
-    padding: 60px;
-    height: auto;
-    border-radius: 20px; /* Añade bordes redondeados a la imagen */
+.NomCar {
+    font-size: 1.5rem;
+    margin-right: 20px; /* Espacio entre el nombre de la carrera y la descripción */
+}
+
+.CarDes p {
+    font-size: 1rem;
+}
+
+/* Asegura que el contenido se ajuste en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .carrera {
+        flex-direction: column; /* Cambia la orientación a vertical en pantallas pequeñas */
+        text-align: center;
+    }
+
+    .imagenes img {
+        margin-bottom: 10px;
+    }
+}
+
+/* Animación para desplazar las carreras al pasar el mouse */
+.carrera {
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrera:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta de la carrera cuando se desplaza sobre ella */
 }
