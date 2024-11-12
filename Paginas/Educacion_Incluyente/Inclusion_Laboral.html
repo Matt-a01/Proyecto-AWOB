@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <script src="./Index.js"></script>
+    <title>Universidad Tecnologica Sta.</title>
+</head>
+<body>
+<nav class="menu">
+    <div class="logo-container">
+        <img src="/Recursos/Logo.png" alt="Logo" class="logo">
+    </div>
+    <label class="logo">Universidad Tecnologica de Santa Catariana</label>
+</nav>
+
+<nav class="Columnas">
+    <a class="nav-link" href="/Index.html">Inicio</a>
+    <a class="nav-link" href="/Paginas/Educacion_Incluyente/Educacion_Incluyente.html">Educacion Incluyente</a>
+    <a class="nav-link" href="/Paginas/Quienes_somos/Quienes_somos.html">¿Quiénes somos?</a>
+    <a class="nav-link" href="/Paginas/Carreras.html">Oferta Educativa</a>
+    <a class="nav-link" href="#">Vida Estudiantil</a>
+    <a class="nav-link" href="/Paginas/Vinculacion.html">Vinculación</a>
+</nav>
+
+    <!-- Menú de navegación lateral -->
+<nav class="vertical-nav">
+    <a class="nav-link" href="./Educacion_Incluyente.html">Modelo de Inclusión</a>
+    <a class="nav-link" href="./Inclusion_Laboral.html">Inclusión Laboral</a>
+    <a class="nav-link" href="./Capacitación_Incluyente.html">Capacitación Incluyente</a>
+</nav>
+
+<div class="Contenedor">
+    <img class="full-width-image" src="./Recursos/inclusion_laboral.jpg" alt="Imagen introductoria">
+    <div class="texto-intro">
+        <h1>Bienvenidos a la Universidad Tecnológica de Santa Catarina</h1>
+        <p>Nuestra misión es ofrecer una educación de calidad e inclusiva para todos nuestros estudiantes, fomentando el desarrollo personal y profesional en un entorno de innovación.</p>
+    </div>
+
+    <h2>Apoyos para la inclusión laboral</h2>
+    
+    <div class="inclusion-container">
+        <nav class="nav-inclusion">
+            <a class="nav-link" href="#" onclick="showText('bolsa-trabajo')">Bolsa de trabajo Incluyente</a>
+            <a class="nav-link" href="#" onclick="showText('preparacion-laboral')">Preparación para el mundo laboral</a>
+            <a class="nav-link" href="#" onclick="showText('toma-conciencia')">Toma de Conciencia y LSM</a>
+            <a class="nav-link" href="#" onclick="showText('asesoria-empresas')">Asesoría a empresas incluyentes</a>
+        </nav>
+        
+        <div class="inclusion-content">
+            <div id="bolsa-trabajo" class="content-section">
+                <h3>Bolsa de trabajo Incluyente</h3>
+                <p>Ofrecemos apoyo para la integración laboral de personas con discapacidad, con programas específicos que impulsan la equidad y accesibilidad en el mercado laboral.</p>
+            </div>
+            <div id="preparacion-laboral" class="content-section" style="display: none;">
+                <h3>Preparación para el mundo laboral</h3>
+                <p>Brindamos cursos y talleres enfocados en la capacitación de habilidades y competencias laborales para personas con discapacidad.</p>
+            </div>
+            <div id="toma-conciencia" class="content-section" style="display: none;">
+                <h3>Toma de Conciencia y LSM</h3>
+                <p>Realizamos actividades de toma de conciencia y ofrecemos cursos de Lengua de Señas Mexicana (LSM) para fomentar la inclusión y comunicación efectiva.</p>
+            </div>
+            <div id="asesoria-empresas" class="content-section" style="display: none;">
+                <h3>Asesoría a empresas incluyentes</h3>
+                <p>Asesoramos a empresas para crear ambientes laborales incluyentes, con políticas y estrategias que favorecen la integración de personas con discapacidad.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-column">
+        <h3>Contáctanos</h3>
+        <p>Universidad Tecnológica de Santa Catarina</p>
+        <p>Dirección: Av. Universidad 123, Santa Catarina, NL</p>
+        <p>Teléfono: +52 81 1234 5678</p>
+        <p>Email: contacto@utsc.edu.mx</p>
+    </div>
+    <div class="footer-column">
+        <h3>Enlaces de Interés</h3>
+        <ul>
+            <li><a href="#">Oferta Educativa</a></li>
+            <li><a href="#">Vinculación</a></li>
+            <li><a href="#">Educación Incluyente</a></li>
+            <li><a href="#">Vida Estudiantil</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3>Síguenos en</h3>
+        <div class="social-icons">
+            <a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="icon-linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

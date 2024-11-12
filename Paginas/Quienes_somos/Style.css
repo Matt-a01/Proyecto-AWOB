@@ -9,7 +9,6 @@ body, html {
     height: 100%;
     font-family: Arial, sans-serif;
 }
-
 /* Estilo para el menú de navegación */
 .menu {
     background-color: rgb(6, 105, 27); /* Color de fondo */
@@ -98,52 +97,29 @@ nav.Columnas a.nav-link.disabled {
 }
 
 
-        /* Contenedor general (Contenido)*/
-.Contenedor {
-    width: 90%;
-    margin: 150px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+        /* Estilo para el contenedor de la página */
+.container {
+    padding: 20px;
+    margin-top: 140px; /* Ajustar según la altura del menú */
 }
 
-/* Columna derecha-izquierda (primera sección) */
-.Col-DR, .Col-IZ {
-    display: flex;
-    gap: 20px;
-    align-items: center;
+/* Título principal */
+.container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: rgb(6, 105, 27);
 }
 
-/* Orden de la primera sección: texto -> imagen */
-.Col-DR .texto {
-    flex: 1;
-    font-size: 17px;
+/* Contenedor de la gráfica */
+.chart-container {
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.Col-DR .imagen img {
-    width: 550px;
-    height: auto;
-    border-radius: 10px;
-}
 
-/* Orden de la segunda sección: imagen -> texto */
-.Col-IZ {
-    flex-direction: row-reverse;
-}
-
-.Col-IZ .imagen img {
-    width: 550px;
-    height: auto;
-    padding: 40px;
-    border-radius: 10px;
-}
-
-.Col-IZ .texto {
-    flex: 1;
-    font-size: 17px;
-}
-
-        /* Estilos para el footer */
+/* Estilos para el footer */
 .footer {
     background-color: #333;
     color: white;
