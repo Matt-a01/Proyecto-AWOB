@@ -1,128 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="Style.css">
-    <title>Universidad Tecnologica Sta.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Educación Incluyente</title>
 </head>
 <body>
-    <!-- Menú principal -->
+    <!-- Menú Principal -->
     <nav class="menu">
         <div class="logo-container">
-            <img src="/Recursos/Logo.png" alt="Logo" class="logo">
+            <img src="/Recursos/Logo.png" alt="Logo">
         </div>
-        <label class="logo">Universidad Tecnológica de Santa Catarina</label>
-    </nav>
-        <!-- Menú de navegación superior -->
-    <nav class="Columnas">
-        <a class="nav-link" href="/Index.html">Inicio</a>
-        <a class="nav-link" href="./Educacion_Incluyente.html">Educacion Incluyente</a>
-        <a class="nav-link" href="/Paginas/Quienes_somos/Quienes_somos.html">¿Quiénes somos?</a>
-        <a class="nav-link" href="/Paginas/Carreras.html">Oferta Educativa</a>
-        <a class="nav-link" href="#">Vida Estudiantil</a>
-        <a class="nav-link" href="/Paginas/Vinculacion.html">Vinculación</a>
+        <h1>Universidad Tecnológica de Santa Catarina</h1>
     </nav>
 
-    <!-- Menú de navegación lateral -->
+    <!-- Menú Horizontal -->
+    <nav class="nav-horizontal">
+        <a href="/Index.html">Inicio</a>
+        <a href="/Paginas/Educacion_Incluyente/Educacion_Incluyente.html">Educación Incluyente</a>
+        <a href="/Paginas/Quienes_somos/Quienes_somos.html">¿Quiénes Somos?</a>
+    </nav>
+
+    <!-- Menú Lateral -->
     <nav class="vertical-nav">
-        <a class="nav-link" href="./Educacion_Incluyente.html">Modelo de Inclusión</a>
-        <a class="nav-link" href="./Inclusion_Laboral.html">Inclusión Laboral</a>
-        <a class="nav-link" href="./Capacitación_Incluyente.html">Capacitación Incluyente</a>
+        <a href="./Educacion_Incluyente.html">Modelo de Inclusión</a>
+        <a href="./Inclusion_Laboral.html">Inclusión Laboral</a>
     </nav>
 
-    <!-- Contenedor principal de texto e imágenes alternas -->
-    <div class="Contenedor">
-        <div class="Col-DR">
-            <div class="texto">
-                <h2>Sección de Texto 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ab necessitatibus ipsum dolorum iste aspernatur, autem veritatis voluptatibus quam dicta fuga modi, alias praesentium sed accusamus fugiat, possimus incidunt atque rerum dolorem error. Est ab ad reiciendis unde, veniam tempore vel provident quasi voluptatum debitis eligendi quisquam enim quaerat laudantium? Ut harum quis quisquam, odio earum non in itaque ducimus?</p>
-            </div>
-            <div class="imagen">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Z60Jld44HlM?si=rICEHw-8SuUCfbPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+    <!-- Contenido Principal -->
+    <div class="contenedor">
+        <img class="full-width-image" src="./Recursos/integracion.jpg" alt="Educación Incluyente">
+        
+        <div class="texto-intro">
+            <h1>Modelo de Inclusión</h1>
+            <p>Conoce nuestro modelo innovador que fomenta la integración educativa.</p>
         </div>
 
-        <div class="Col-IZ">
-            <div class="imagen">
-                <img src="./Recursos/integracion.jpg" alt="Imagen Descriptiva 2">
-            </div>
-            <div class="texto">
-                <h2>Sección de Texto 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium culpa nostrum nisi soluta assumenda sed fugiat? Omnis laudantium dicta deserunt ipsum fugiat porro eaque culpa architecto ab ullam eius, eveniet asperiores ad molestias? Sunt consectetur ea facilis tempora, quis quidem temporibus voluptas saepe maxime consequatur, odio quisquam ipsa vero! Molestiae.</p>
-            </div>
-        </div>
-
-        <div class="Col-DR">
-            <div class="texto">
-                <h2>Sección de Texto 3</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, natus, vero eligendi beatae modi optio aliquam voluptatibus vel commodi consectetur sapiente nostrum. Nemo fugiat asperiores temporibus illo! Repellendus nam cum amet optio iure hic possimus commodi soluta. Quidem iste odit maiores perferendis inventore consequatur delectus, veritatis consectetur, nemo exercitationem odio!</p>
-            </div>
-            <div class="imagen">
-                <img src="./Recursos/inclusion2.jpg" alt="Imagen Descriptiva 3">
-            </div>
-        </div>
-
-        <div class="Col-IZ">
-            <div class="imagen">
-                <img src="./Recursos/diseno_universal.png" alt="Imagen Descriptiva 4">
-            </div>
-            <div class="texto">
-                <h2>Sección de Texto 4</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, explicabo blanditiis quos veritatis illum voluptate sed unde. Dicta placeat esse quos iure tenetur quibusdam pariatur velit veniam, optio consectetur eos sunt commodi ut libero excepturi ducimus deserunt aliquid unde repudiandae dolore, praesentium architecto consequatur! Maxime voluptatum ab ex commodi obcaecati!</p>
-            </div>
-        </div>
+        <section class="carrusel">
+            <button onclick="updateCarousel(-1)">&#9664;</button>
+            <img src="./Recursos/premios_1.jpg" alt="Reconocimiento 1" class="active">
+            <img src="./Recursos/premios_2.jpg" alt="Reconocimiento 2">
+            <img src="./Recursos/premios_3.jpg" alt="Reconocimiento 3">
+            <img src="./Recursos/premios_4.jpg" alt="Reconocimiento 4">
+            <img src="./Recursos/premios_5.jpg" alt="Reconocimiento 5">
+            <img src="./Recursos/premios_6.jpg" alt="Reconocimiento 6">
+            <img src="./Recursos/premios_7.jpg" alt="Reconocimiento 7">
+            <img src="./Recursos/premios_8.jpg" alt="Reconocimiento 8">
+            <img src="./Recursos/premios_9.jpg" alt="Reconocimiento 9">
+            <img src="./Recursos/premios_10.jpg" alt="Reconocimiento 10">
+            <img src="./Recursos/premios_11.jpg" alt="Reconocimiento 11">
+            <button onclick="updateCarousel(1)">&#9654;</button>
+        </section>
     </div>
 
-    <!-- Apartado de Reconocimientos con carrusel de imágenes -->
-    <div class="reconocimientos">
-        <h2>Reconocimientos al modelo</h2>
-        <div class="carrusel">
-            <button class="prev" onclick="moverCarrusel(-1)">&#9664;</button>
-            <div class="imagenes">
-                <img src="./Recursos/premios_1.jpg" alt="Reconocimiento 1">
-                <img src="./Recursos/premios_2.jpg" alt="Reconocimiento 2">
-                <img src="./Recursos/premios_3.jpg" alt="Reconocimiento 3">
-                <img src="./Recursos/premios_4.jpg" alt="Reconocimiento 4">
-                <img src="./Recursos/premios_5.jpg" alt="Reconocimiento 5">
-                <img src="./Recursos/premios_6.jpg" alt="Reconocimiento 6">
-                <img src="./Recursos/premios_7.jpg" alt="Reconocimiento 7">
-                <img src="./Recursos/premios_8.jpg" alt="Reconocimiento 8">
-                <img src="./Recursos/premios_9.jpg" alt="Reconocimiento 9">
-                <img src="./Recursos/premios_10.jpg" alt="Reconocimiento 10">
-                <img src="./Recursos/premios_11.jpg" alt="Reconocimiento 11">
-            </div>
-            <button class="next" onclick="moverCarrusel(1)">&#9654;</button>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Enlaces de Interés</h3>
+            <ul>
+                <li><a href="#">Vinculación</a></li>
+                <li><a href="#">Oferta Educativa</a></li>
+            </ul>
         </div>
-    </div>
+    </footer>
 
-<footer class="footer">
-    <div class="footer-column">
-        <h3>Contáctanos</h3>
-        <p>Universidad Tecnológica de Santa Catarina</p>
-        <p>Dirección: Av. Universidad 123, Santa Catarina, NL</p>
-        <p>Teléfono: +52 81 1234 5678</p>
-        <p>Email: contacto@utsc.edu.mx</p>
-    </div>
-    <div class="footer-column">
-        <h3>Enlaces de Interés</h3>
-        <ul>
-            <li><a href="#">Oferta Educativa</a></li>
-            <li><a href="#">Vinculación</a></li>
-            <li><a href="#">Educación Incluyente</a></li>
-            <li><a href="#">Vida Estudiantil</a></li>
-        </ul>
-    </div>
-    <div class="footer-column">
-        <h3>Síguenos en</h3>
-        <div class="social-icons">
-            <a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="icon-linkedin.png" alt="LinkedIn"></a>
-        </div>
-    </div>
-</footer>
-<script src="Index.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

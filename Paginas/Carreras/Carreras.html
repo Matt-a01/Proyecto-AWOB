@@ -1,102 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metaetiquetas básicas -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="Style.css">
-    <title>Universidad Tecnologica Sta.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Style.css">
+    <title>Universidad Tecnológica de Santa Catarina</title>
 </head>
 <body>
-    <nav class="menu">
+    <!-- Sección del encabezado -->
+    <header class="header">
         <div class="logo-container">
             <img src="/Recursos/Logo.png" alt="Logo" class="logo">
+            <h1 class="title">Universidad Tecnológica de Santa Catarina</h1>
         </div>
-        <label class="logo">Universidad Tecnologica de Santa Catariana</label>
+    </header>
+
+    <!-- Menú de navegación principal -->
+    <nav class="navbar">
+        <a href="/Index.html" class="nav-link">Inicio</a>
+        <a href="/Paginas/Educacion_Incluyente/Educacion_Incluyente.html" class="nav-link">Educación Incluyente</a>
+        <a href="/Paginas/Quienes_somos/Quienes_somos.html" class="nav-link">¿Quiénes somos?</a>
+        <a href="/Paginas/Carreras/Carreras.html" class="nav-link">Oferta Educativa</a>
+        <a href="/Paginas/Vinculacion/Vinculacion.html" class="nav-link">Vinculación</a>
     </nav>
 
-    <nav class="Columnas">
-        <a class="nav-link" href="/Index.html">Inicio</a>
-        <a class="nav-link" href="#">Educacion Incluyente</a>
-        <a class="nav-link" href="#">¿Quiénes somos?</a>
-        <a class="nav-link" href="/Paginas/Carreras.html">Oferta Educativa</a>
-        <a class="nav-link" href="#">Vida Estudiantil</a>
-        <a class="nav-link" href="#">Vinculación</a>
-    </nav>
-
-    <div class="Contenido">
-        <div class="carrera">
-            <div class="imagenes">
-                <img src="https://i0.wp.com/utd.edu.mx/wp-content/uploads/2022/07/pexels-max-fischer-5212325_1.jpg?w=600&ssl=1" alt="Carrera 1">
-            </div>
-            <div class="NomCar">
+    <!-- Contenido principal -->
+    <main class="contenido">
+        <!-- Tarjeta de cada carrera -->
+        <section class="carrera">
+            <img src="https://i0.wp.com/utd.edu.mx/wp-content/uploads/2022/07/pexels-max-fischer-5212325_1.jpg?w=600&ssl=1" alt="Carrera 1" class="carrera-imagen">
+            <div class="carrera-texto">
                 <h3>Licenciatura en Gestión Institucional Educativa y Curricular</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
             </div>
-            <div class="CarDes">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore perferendis omnis incidunt facere corporis quia, iure modi eligendi cupiditate sapiente sunt quae optio tenetur nostrum dolore perspiciatis recusandae aliquam maiores hic magni. Numquam expedita, eius nihil sint nam in illum officiis dolorum dolore. Excepturi voluptatem placeat delectus atque nulla.</p>
-            </div>
+        </section>
+
+        <div class="botones-pdf">
+            <a href="#" target="new" class="boton-descarga">Plan de Estudios</a>
+            <a href="http://www.utsc.edu.mx/ofertaEducativa/pdf/ing/perfil_regular_LGIEC_2020.pdf" target="new" class="boton-descarga">Programa Educativo</a>
+            <a href="http://www.utsc.edu.mx/ofertaEducativa/pdf/ing/perfil%20egresos%20LGIEC_2020.pdf" target="new" class="boton-descarga">Perfil de Egreso</a>
         </div>
 
-        <div class="carrera">
-            <div class="imagenes">
-                <img src="https://i0.wp.com/utd.edu.mx/wp-content/uploads/2022/07/pexels-fauxels-3183197_1.jpg?w=600&ssl=1" alt="Carrera 2">
-            </div>
-            <div class="NomCar">
+        <section class="carrera">
+            <img src="https://i0.wp.com/utd.edu.mx/wp-content/uploads/2022/07/pexels-fauxels-3184292_1.jpg?w=600&ssl=1" alt="Carrera 1" class="carrera-imagen">
+            <div class="carrera-texto">
                 <h3>Licenciatura en Innovación de Negocios y Mercadotecnia</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
             </div>
-            <div class="CarDes">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat non blanditiis necessitatibus beatae error mollitia voluptates laboriosam rerum itaque natus quam dolorem incidunt explicabo, fuga totam provident architecto quo aperiam consequuntur quibusdam porro iusto dolor, placeat aut. Laborum, vero, enim porro fuga, impedit sed nemo omnis voluptate eaque sapiente ea.</p>
-            </div>
+        </section>
+
+        <div class="botones-pdf">
+            <a href="#" target="new" class="boton-descarga">Plan de Estudios</a>
+            <a href="http://www.utsc.edu.mx/ofertaEducativa/pdf/dn/perfil_regular_LINM_2020.pdf" target="new" class="boton-descarga">Programa Educativo</a>
+            <a href="http://www.utsc.edu.mx/ofertaEducativa/pdf/dn/perfil%20egresos%20LINM%202020.pdf" target="new" class="boton-descarga">Perfil de Egreso</a>
         </div>
 
-        <div class="carrera">
-            <div class="imagenes">
-                <img src="https://i0.wp.com/utd.edu.mx/wp-content/uploads/2022/07/Ingenieria-en-mantenimiento-industrial.jpg?w=600&ssl=1" alt="Carrera 3">
+        <section class="carrera">
+            <img src="https://i0.wp.com/utd.edu.mx/wp-content/uploads/2022/07/Ingenieria-en-mantenimiento-industrial.jpg?w=600&ssl=1" alt="Carrera 1" class="carrera-imagen">
+            <div class="carrera-texto">
+                <h3>Ingieneria En Mantenimiento Industrial</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
             </div>
-            <div class="NomCar">
-                <h3>Ingeniería en Mantenimiento Industrial</h3>
-            </div>
-            <div class="CarDes">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat non blanditiis necessitatibus beatae error mollitia voluptates laboriosam rerum itaque natus quam dolorem incidunt explicabo, fuga totam provident architecto quo aperiam consequuntur quibusdam porro iusto dolor, placeat aut. Laborum, vero, enim porro fuga, impedit sed nemo omnis voluptate eaque sapiente ea.</p>
-            </div>
+        </section>
+
+        <div class="botones-pdf">
+            <a href="http://www.utsc.edu.mx/ofertaEducativa/pdf/mtto/Planes%20de%20estudio%20Mantenimiento2021.pdf" target="new" class="boton-descarga">Plan de Estudios</a>
+            <a href="http://www.utsc.edu.mx/ofertaEducativa/pdf/mtto/programa_educativo_IMI_2021.pdf" target="new" class="boton-descarga">Programa Educativo</a>
+            <a href="http://www.utsc.edu.mx/ofertaEducativa/pdf/mtto/perfil%20egresos%20IMI%202021.pdf" target="new" class="boton-descarga">Perfil de Egreso</a>
         </div>
 
-        <div class="carrera">
-            <div class="imagenes">
-                <img src="http://www.uthermosillo.edu.mx/wp-content/uploads/2016/06/IMG_9718.jpg" alt="Carrera 4">
+        <section class="carrera">
+            <img src="https://www.utnc.edu.mx/siteweb_utnc/wp-content/uploads/2021/03/ISP-1024x427.jpg" alt="Carrera 1" class="carrera-imagen">
+            <div class="carrera-texto">
+                <h3>Ingieneria En Sistemas Productivos</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
             </div>
-            <div class="NomCar">
-                <h3>Ingeniería en Sistemas Productivos</h3>
-            </div>
-            <div class="CarDes">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat non blanditiis necessitatibus beatae error mollitia voluptates laboriosam rerum itaque natus quam dolorem incidunt explicabo, fuga totam provident architecto quo aperiam consequuntur quibusdam porro iusto dolor, placeat aut. Laborum, vero, enim porro fuga, impedit sed nemo omnis voluptate eaque sapiente ea.</p>
-            </div>
+        </section>
+
+        <div class="botones-pdf">
+            <a href="http://www.utsc.edu.mx/ofertaEducativa/pdf/pim/PLAN%20DE%20ESTUDIOS%20PIM%20e%20ISP._2021.pdf" target="new" class="boton-descarga">Plan de Estudios</a>
+            <a href="http://www.utsc.edu.mx/ofertaEducativa/pdf/pim/programa_educativo2021.pdf" target="new" class="boton-descarga">Programa Educativo</a>
+            <a href="http://www.utsc.edu.mx/ofertaEducativa/pdf/pim/perfil%20egresos%20ISP%202021.pdf" target="new" class="boton-descarga">Perfil de Egreso</a>
         </div>
 
-        <div class="carrera">
-            <div class="imagenes">
-                <img src="https://online.anahuac.mx/images/procesos-de-manufactura_700w.jpg" alt="Carrera 5">
+        <section class="carrera">
+            <img src="https://www.uag.mx/contenido/S3K29mU7rt/que-es-la-ingenieria-mecatronica_QkL.jpg" alt="Carrera 1" class="carrera-imagen">
+            <div class="carrera-texto">
+                <h3>Ingieneria En Mecatrónica</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
             </div>
-            <div class="NomCar">
-                <h3>Ingeniería en Mecatrónica</h3>
-            </div>
-            <div class="CarDes">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat non blanditiis necessitatibus beatae error mollitia voluptates laboriosam rerum itaque natus quam dolorem incidunt explicabo, fuga totam provident architecto quo aperiam consequuntur quibusdam porro iusto dolor, placeat aut. Laborum, vero, enim porro fuga, impedit sed nemo omnis voluptate eaque sapiente ea.</p>
-            </div>
+        </section>
+
+        <div class="botones-pdf">
+            <a href="http://www.utsc.edu.mx/ofertaEducativa/pdf/meca/plan%20de%20estudios%20mecatronica2021.pdf" target="new" class="boton-descarga">Plan de Estudios</a>
+            <a href="http://www.utsc.edu.mx/ofertaEducativa/pdf/meca/programa_educativo_IMT_2021.pdf" target="new" class="boton-descarga">Programa Educativo</a>
+            <a href="http://www.utsc.edu.mx/ofertaEducativa/pdf/meca/perfil%20egresos%20IMT_2021.pdf" target="new" class="boton-descarga">Perfil de Egreso</a>
         </div>
 
-        <div class="carrera">
-            <div class="imagenes">
-                <img src="https://utrivieramaya.edu.mx/wp-content/uploads/2021/01/developer-working-on-laptop.jpg" alt="Carrera 6">
-            </div>
-            <div class="NomCar">
+        <section class="carrera">
+            <img src="https://utrivieramaya.edu.mx/wp-content/uploads/2021/01/developer-working-on-laptop.jpg" alt="Carrera 1" class="carrera-imagen">
+            <div class="carrera-texto">
                 <h3>Ingeniería en Desarrollo y Gestión de Software</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
             </div>
-            <div class="CarDes">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat non blanditiis necessitatibus beatae error mollitia voluptates laboriosam rerum itaque natus quam dolorem incidunt explicabo, fuga totam provident architecto quo aperiam consequuntur quibusdam porro iusto dolor, placeat aut. Laborum, vero, enim porro fuga, impedit sed nemo omnis voluptate eaque sapiente ea.</p>
-            </div>
+        </section>
+
+        <div class="botones-pdf">
+            <a href="http://www.utsc.edu.mx/ofertaEducativa/pdf/tic/PlanEstudiosTIADSM_2018.pdf" target="new" class="boton-descarga">Plan de Estudios</a>
+            <a href="http://www.utsc.edu.mx/ofertaEducativa/pdf/tic/programa_educativo_IDGS_2021.pdf" target="new" class="boton-descarga">Programa Educativo</a>
+            <a href="http://www.utsc.edu.mx/ofertaEducativa/pdf/tic/perfil%20de%20egreso%202021.pdf" target="new" class="boton-descarga">Perfil de Egreso</a>
         </div>
 
+        <section class="carrera">
+            <img src="https://blog.frontierindustrial.mx/hubfs/Electromovilidad%20impulsa%20el%20mercado%20inmobiliario%20industrial%20en%20M%C3%A9xico%20-%20Imagen%20-%20Frontier%20%281%29.png" alt="Carrera 1" class="carrera-imagen">
+            <div class="carrera-texto">
+                <h3>ingeniería en electromovilidad</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+            </div>
+            <div>
+                <h2>Proximamente</h2>
+            </div>
+        </section>
 
-    </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Contáctanos</h3>
+            <p>Universidad Tecnológica de Santa Catarina</p>
+            <p>Dirección: Monterrey - Saltillo Km. 61.5, Santa Catarina, N.L.</p>
+            <p>Teléfono: +52 81 1234 5678</p>
+            <p>Email: contacto@utsc.edu.mx</p>
+        </div>
+        <div class="footer-column">
+            <h3>Enlaces de Interés</h3>
+            <ul>
+                <li><a href="#">Oferta Educativa</a></li>
+                <li><a href="#">Vinculación</a></li>
+                <li><a href="#">Educación Incluyente</a></li>
+                <li><a href="#">Vida Estudiantil</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Síguenos</h3>
+            <a href="https://www.facebook.com/UTSCNL"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/utsantacatarina/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/utsc/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
 </body>
 </html>

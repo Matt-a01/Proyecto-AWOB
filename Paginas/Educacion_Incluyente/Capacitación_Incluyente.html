@@ -1,110 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="Style.css">
-    <title>Universidad Tecnologica Sta.</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Capacitación Incluyente</title>
 </head>
 <body>
+    <!-- Menú principal -->
     <nav class="menu">
         <div class="logo-container">
-            <img src="/Recursos/Logo.png" alt="Logo" class="logo">
+            <img src="/Recursos/Logo.png" alt="Logo de la universidad">
         </div>
-        <label class="logo">Universidad Tecnologica de Santa Catariana</label>
+        <h1>Universidad Tecnológica de Santa Catarina</h1>
     </nav>
 
-    <nav class="Columnas">
-        <a class="nav-link" href="/Index.html">Inicio</a>
-        <a class="nav-link" href="/Paginas/Educacion_Incluyente/Educacion_Incluyente.html">Educacion Incluyente</a>
-        <a class="nav-link" href="/Paginas/Quienes_somos/Quienes_somos.html">¿Quiénes somos?</a>
-        <a class="nav-link" href="/Paginas/Carreras.html">Oferta Educativa</a>
-        <a class="nav-link" href="#">Vida Estudiantil</a>
-        <a class="nav-link" href="/Paginas/Vinculacion.html">Vinculación</a>
+    <!-- Menú de navegación horizontal -->
+    <nav class="nav-horizontal">
+        <a href="/Index.html">Inicio</a>
+        <a href="/Paginas/Educacion_Incluyente/Educacion_Incluyente.html">Educación Incluyente</a>
+        <a href="/Paginas/Quienes_somos/Quienes_somos.html">¿Quiénes somos?</a>
+        <a href="/Paginas/Carreras/Carreras.html">Oferta Educativa</a>
+        <a href="/Paginas/Vinculacion/Vinculacion.html">Vinculación</a>
     </nav>
-        <!-- Menú de navegación lateral -->
-        <nav class="vertical-nav">
-            <a class="nav-link" href="./Educacion_Incluyente.html">Modelo de Inclusión</a>
-            <a class="nav-link" href="./Inclusion_Laboral.html">Inclusión Laboral</a>
-            <a class="nav-link" href="./Capacitación_Incluyente.html">Capacitación Incluyente</a>
-        </nav>
 
+    <!-- Menú lateral -->
+    <nav class="vertical-nav">
+        <a href="./Educacion_Incluyente.html">Modelo de Inclusión</a>
+        <a href="./Inclusion_Laboral.html">Inclusión Laboral</a>
+        <a href="./Capacitación_Incluyente.html">Capacitación Incluyente</a>
+    </nav>
 
-    <div class="Contenedor">
-        <img class="full-width-image" src="https://via.placeholder.com/1000x400" alt="Imagen introductoria">
+    <!-- Contenido principal -->
+    <div class="contenedor">
+        <img class="full-width-image" src="https://via.placeholder.com/1000x400" alt="Capacitación inclusiva">
         <div class="texto-intro">
-            <h1>Bienvenidos a la Universidad Tecnológica de Santa Catarina</h1>
-            <p>En nuestra universidad ofrecemos diferentes servicios y herramientas para apoyar a nuestros estudiantes en su proceso educativo.</p>
+            <h1>Capacitación Incluyente</h1>
+            <p>Brindamos herramientas y conocimientos para fomentar la inclusión laboral y educativa en nuestra comunidad.</p>
         </div>
 
         <div class="services-container">
             <nav class="nav-horizontal">
-                <a class="nav-link" href="#" onclick="showService('lector-pantalla')">Lector de pantalla</a>
-                <a class="nav-link" href="#" onclick="showService('lengua-senas')">Lengua de Señas Mexicana</a>
-                <a class="nav-link" href="#" onclick="showService('capacitacion')">Capacitación</a>
+                <a href="#" onclick="toggleSection('lector-pantalla', 'service-section')">Lector de pantalla</a>
+                <a href="#" onclick="toggleSection('lengua-senas', 'service-section')">Lengua de Señas Mexicana</a>
+                <a href="#" onclick="toggleSection('capacitacion', 'service-section')">Capacitación</a>
             </nav>
-            
+
             <div class="services-content">
-                <div id="lector-pantalla" class="service-section">
-                    <div class="service-item">
-                        <img src="https://via.placeholder.com/150x150" alt="Lector de pantalla">
-                        <div class="service-text">
-                            <h3>Lector de pantalla</h3>
-                            <p>Ofrecemos tecnologías asistivas como lectores de pantalla para facilitar el acceso a la información de nuestros estudiantes con discapacidad visual.</p>
-                        </div>
-                    </div>
+                <div id="lector-pantalla" class="service-section active">
+                    <h3>Lector de pantalla</h3>
+                    <p>Contamos con herramientas para personas con discapacidad visual.</p>
                 </div>
-                
-                <div id="lengua-senas" class="service-section" style="display: none;">
-                    <div class="service-item">
-                        <img src="https://via.placeholder.com/150x150" alt="Lengua de Señas Mexicana">
-                        <div class="service-text">
-                            <h3>Lengua de Señas Mexicana</h3>
-                            <p>Contamos con intérpretes y programas de enseñanza de Lengua de Señas Mexicana para facilitar la comunicación y la inclusión de personas con discapacidad auditiva.</p>
-                        </div>
-                    </div>
+                <div id="lengua-senas" class="service-section">
+                    <h3>Lengua de Señas Mexicana</h3>
+                    <p>Ofrecemos intérpretes y cursos de Lengua de Señas Mexicana.</p>
                 </div>
-                
-                <div id="capacitacion" class="service-section" style="display: none;">
-                    <div class="service-item">
-                        <img src="https://via.placeholder.com/150x150" alt="Capacitación">
-                        <div class="service-text">
-                            <h3>Capacitación</h3>
-                            <p>Brindamos capacitación a estudiantes y docentes sobre la inclusión y accesibilidad en el entorno educativo y laboral.</p>
-                        </div>
-                    </div>
+                <div id="capacitacion" class="service-section">
+                    <h3>Capacitación</h3>
+                    <p>Capacitamos a estudiantes y empresas en prácticas incluyentes.</p>
                 </div>
             </div>
         </div>
     </div>
 
-
-<footer class="footer">
-    <div class="footer-column">
-        <h3>Contáctanos</h3>
-        <p>Universidad Tecnológica de Santa Catarina</p>
-        <p>Dirección: Av. Universidad 123, Santa Catarina, NL</p>
-        <p>Teléfono: +52 81 1234 5678</p>
-        <p>Email: contacto@utsc.edu.mx</p>
-    </div>
-    <div class="footer-column">
-        <h3>Enlaces de Interés</h3>
-        <ul>
-            <li><a href="#">Oferta Educativa</a></li>
-            <li><a href="#">Vinculación</a></li>
-            <li><a href="#">Educación Incluyente</a></li>
-            <li><a href="#">Vida Estudiantil</a></li>
-        </ul>
-    </div>
-    <div class="footer-column">
-        <h3>Síguenos en</h3>
-        <div class="social-icons">
-            <a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="icon-linkedin.png" alt="LinkedIn"></a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Contáctanos</h3>
+            <p>Dirección: Carr. Monterrey - Saltillo Km. 61.5, Bosques de Santa Catarina, 66359 Cdad. Santa Catarina, N.L.</p>
+            <p>Teléfono: +52 81 1234 5678</p>
+            <p>Email: contacto@utsc.edu.mx</p>
         </div>
-    </div>
-</footer>
+        <div class="footer-column">
+            <h3>Enlaces de Interés</h3>
+            <ul>
+                <li><a href="#">Oferta Educativa</a></li>
+                <li><a href="#">Vinculación</a></li>
+                <li><a href="#">Educación Incluyente</a></li>
+                <li><a href="#">Vida Estudiantil</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Síguenos en</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
